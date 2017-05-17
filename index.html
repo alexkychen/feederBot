@@ -24,6 +24,22 @@
         margin: 0 !important;
       }
 
+      .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        line-height: 1;
+        width: 100%; // Add this
+      }
+
+      .carousel-caption{
+        width: 100%;
+        left: 0;
+        padding-right: 10%;
+        padding-left: 10%;
+        background: rgba(0,0,0,0.5);
+      }
+
 
     </style>
 
@@ -86,36 +102,44 @@
         <li data-target="#design" data-slide-to="1"></li>
         <li data-target="#design" data-slide-to="2"></li>
         <li data-target="#design" data-slide-to="3"></li>
+        <li data-target="#design" data-slide-to="4"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="fishpic.jpg" alt="...">
+        <div class="item active" style="width:100%;">
+          <img src="RPiBoard.jpg" alt="...">
             <div class="carousel-caption">
               <h2>Single Board Computer</h2>
               <p style="font-size: 1.5em;">Fish FeederBot is built based on Raspberry Pi - an open source, inexpensive, and expandable single board computer.</p>
             </div>
         </div>
         <div class="item">
-          <img src="fishpic.jpg" alt="...">
+          <img src="PiCam.jpg" alt="...">
             <div class="carousel-caption">
-              <h2>Raspberry Pi Camera</h2>
+              <h2>Camera Module</h2>
               <p style="font-size: 1.5em">I use Raspberry Pi Camera module as the computer's eyes to monitor fish feeding activity. With relevant Python libraries, computer vision programming is used to count fish under the camera view.</p>
             </div>
         </div>
         <div class="item">
-          <img src="fishpic.jpg" alt="...">
+          <img src="FeederMod.jpg" alt="...">
             <div class="carousel-caption">
               <h2>Feeder Module</h2>
               <p style="font-size: 1.5em">Feeding is controlled through a stepper motor so that the quantity of fish food can be precisely controlled and is adjustable.</p>
             </div>
         </div>
         <div class="item">
-          <img src="fishpic.jpg" alt="...">
+          <img src="RelayMod.jpg" alt="...">
             <div class="carousel-caption">
               <h2>Relay Module</h2>
               <p style="font-size: 1.5em">To ensure the feeding activity concentrates under the camera view, a relay module is used to temporarily turn off the power of filters or pumps that produce water flow. </p>
+            </div>
+        </div>
+        <div class="item">
+          <img src="3DHousing.jpg" alt="...">
+            <div class="carousel-caption">
+              <h2>3D Printed Housing</h2>
+              <p style="font-size: 1.5em">Electronic components are protected by 3D printed plastic cases. The 3D printed parts can be customized; different materials and multiple colors are available.</p>
             </div>
         </div>
       </div>
