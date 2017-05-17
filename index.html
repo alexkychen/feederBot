@@ -12,23 +12,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    
+
+    <style type="text/css">
+
+      #DemoVideo { 
+        width: 100%;
+      }
+
+      .nopadding {
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+
+    </style>
 
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar navbar-inverse" style="margin-bottom: 0px; font-size: 1.4em; min-height: 65px; padding-top: 5px;">
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="border-color: #428bca;">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar" style="background-color: #428bca;"></span>
-        <span class="icon-bar" style="background-color: #428bca;"></span>
-        <span class="icon-bar" style="background-color: #428bca;"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand">Fish FeederBot</a>
+      <a class="navbar-brand" style="font-size: 1.2em">Fish FeederBot</a>
     </div>
-
+  
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
@@ -41,14 +54,27 @@
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
     </nav>
-
-
-    <div class="jumbotron">
-      <div class="container-fluid">
-        <h3>Feature</h3>
+    
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5 nopadding">
+            <h1 style="padding-left: 20px; padding-right: 20px; text-align: center; padding-top: 20%;">Monitor fish feeding activity through computer vision</h1>
+            <h4 style="text-align: center; color: gray; padding-top: 10%; padding-bottom: 10%;">Power by Raspberry Pi</h4>
+      </div> 
+      <div class="col-md-7 nopadding" style="background-color: black;">
+          <video loop muted autoplay id="DemoVideo">
+            <source src="FishCountDemoS.mp4" type="video/mp4" />
+          </video>
       </div>
     </div>
-
+    </div>
+    
+    <div class="jumbotron" style="margin: 0;">
+      <div style="text-align: center;">
+        <h1>Features</h1>
+        <p>...a list of features</p>
+      </div>
+    </div>
 
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -61,21 +87,28 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="..." alt="...">
+          <img src="fishpic.jpg" alt="...">
             <div class="carousel-caption">
               <h3>Feature 1</h3>
               <p>this is description paragraph</p>
             </div>
         </div>
         <div class="item">
-          <img src="..." alt="...">
+          <img src="fishpic.jpg" alt="...">
             <div class="carousel-caption">
-            
+              <h3>Feature 2</h3>
+              <p>this is description paragraph</p>
             </div>
         </div>
-        Text3
+        <div class="item">
+          <img src="fishpic.jpg" alt="...">
+            <div class="carousel-caption">
+              <h3>Feature 3</h3>
+              <p>this is description paragraph</p>
+            </div>
+        </div>
       </div>
-
+        
       <!-- Controls -->
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -86,6 +119,13 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+
+    <div class="jumbotron">
+      <h1>hello world!</h1>
+      <p>...some text here</p>
+    </div>
+
+
 
 
 
