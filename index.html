@@ -64,9 +64,9 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#concept">Concept</a></li>
         <li><a href="#design">Design</a></li>
-        <li><a href="#">Results</a></li>
-        <li><a href="#">Applications</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#applications">Applications</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -128,22 +128,22 @@
         <div class="item active" style="width:100%;">
           <img src="RPiBoard2.jpg" alt="...">
             <div class="carousel-caption">
-              <h2>Single Board Computer</h2>
-              <p style="font-size: 1.5em;">Fish FeederBot is built based on Raspberry Pi - an open source, inexpensive, and expandable single board computer.</p>
+              <h2>Electronic Components</h2>
+              <p style="font-size: 1.5em;">Fish FeederBot is built based on Raspberry Pi - an open source, inexpensive, and expandable single board computer, which connects to stepper motor and relay modules to control a feeder and water pumps.</p>
             </div>
         </div>
         <div class="item">
           <img src="PiCam.jpg" alt="...">
             <div class="carousel-caption">
-              <h2>Camera Module</h2>
-              <p style="font-size: 1.5em">I use Raspberry Pi Camera module as the computer's eyes to monitor fish feeding activity. With relevant Python libraries, computer vision programming is used to count fish under the camera view.</p>
+              <h2>Vision Sensor</h2>
+              <p style="font-size: 1.5em">A Raspberry Pi Camera module is used to capture images, and each image is processed by computer vision programming to count the number of fish.</p>
             </div>
         </div>
         <div class="item">
           <img src="FeederMod.jpg" alt="...">
             <div class="carousel-caption">
               <h2>Feeder Module</h2>
-              <p style="font-size: 1.5em">Feeding is controlled through a stepper motor so that the quantity of fish food can be precisely controlled and is adjustable.</p>
+              <p style="font-size: 1.5em">Feeding is controlled through a stepper motor such that the quantity of fish food can be precisely controlled and is adjustable.</p>
             </div>
         </div>
         <div class="item">
@@ -157,7 +157,7 @@
           <img src="3DHousing.jpg" alt="...">
             <div class="carousel-caption">
               <h2>3D Printed Housing</h2>
-              <p style="font-size: 1.5em">Electronic components are protected by 3D printed plastic cases. The 3D printed parts can be customized; different materials and multiple colors are available.</p>
+              <p style="font-size: 1.5em">Electronic components are protected by 3D printed plastic cases. The 3D printed parts can be customized; different materials and colors are available.</p>
             </div>
         </div>
       </div>
@@ -173,10 +173,57 @@
       </a>
     </div>
 
-    <div class="jumbotron">
-      <h1>Results</h1>
-      
+    <div id="results" class="jumbotron" style="margin: 0; background-color:white;">
+      <div>
+        <h2 style="text-align: center;">Results</h2>
+      </div>  
     </div>
+
+    <div id="applications" class="jumbotron" style="margin: 0;">
+      <div>
+        <h2 style="text-align: center;">Applications</h2>
+      </div>
+      <div style="padding-left:10%; padding-right:10%;">
+        <ul>
+          <li><p><strong>Laboratory research</strong> - Fish FeederBot can assist to study how fish feeding activities change under various conditions. Feeding events (e.g., feed quantity and timing) are programmable, so the data can be systematically collected for further analyses. Data stored in databases help researchers analyze the results in an efficient manner.</p></li>
+          <li><p><strong>Aquaculture & Aquarium</strong> - Through computationally monitoring fish feeding activity, aquaculture farmers or fish keepers can be notified if the fish have decreasing appetite and possibly suffer from environmental changes. As such, it helps farmers take necessary actions in advance of worse conditions. For valuable and unique aquarium fish, modified computer vision programs allow it to track individual fish and monitor its feeding activity to reflect the health status.</p></li>
+          <li><p><strong>Internet of Things (IoT)</strong> - Raspberry Pi has a built-in Ethernet port and also can connect to the Internet wirelessly through USB WiFi dongle (or built-in WiFi in model 3). This makes the FeederBot an IoT device and enable other functionalities, such as wirelessly real-time control and monitor.</p></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="about" class="jumbotron" style="margin: 0; background-color: white;">
+      <div>
+        <h2 style="text-align: center;">About</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p><strong>Future Direction</strong></p>
+            <p style="font-size: 18px;">Fish FeederBot is an ongoing project. While the concept of monitoring fish feeding activity has been successfully implemented, there are rooms for improvement to achieve A.I. (Artificial Intelligence) fish health check. To obtain more precise fish count, other computer vision algorithms, such as Haar-cascade, will be employed to recognize individual fish and distinguish different species. Also, machine learning algorithms will be used to train the computer to recognize abnormal feeding patterns, and consequently send alerts to users.<hr style="visibility: hidden;"></p>
+          </div>
+          <div class="col-md-4">
+            <p><strong>Designer</strong></p>
+            <img src="AlexAvatar.png" width="150" style="float: left;margin-right: 10px;">
+            <p style="font-size: 18px; display:inline;">Kuan-Yu (Alex) Chen has a Ph.D. degree in Evolution, Ecology, and Organismal Biology, with a research focus on fish biology. He is also interested in aquarium and aquaculture automation. Since 2013, he has begun using two popular open source hardware platforms, Raspberry Pi and Arduino, to design gadgets for his aquariums. He hopes to bridge the gap between A.I. and fish culture or research.<hr style="visibility: hidden;"></p>
+          </div>
+          <div class="col-md-4">
+          <p><strong>Contact</strong></p>
+            <p style="font-size: 18px;">Email: <a href="mailto:alexkychen@gmail.com?subject=From20%FishFeederBot">alexkychen@gmail.come</a></p>
+            <p style="font-size: 18px;">Phone: +(1) 614-292-1613</p>
+            <p style="font-size: 18px;">Address: </p>
+            <p style="font-size: 18px;">Aquatic Ecology Laboratory<br>The Ohio State University<br>1314 Kinnear Rd.,<br>Columbus, Ohio 43212<br>USA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" style="background-color: #333333; margin-top: auto; height:50px; padding-top:10px;">
+      <div class="container">
+        <p style="color: white; font-size: 1.2em; text-align: center;">@ 2017 Alex Chen copyrights | Fish FeederBot under the license CC BY-NC-SA 4.0 </p>
+      </div>
+    </footer>
 
 
 
