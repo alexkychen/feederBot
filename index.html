@@ -86,11 +86,28 @@
     </div>
     
     <div id="concept" class="jumbotron" style="margin: 0;">
-      <div style="text-align: center;">
-        <h2>Concept</h2>
+      <div style="text-align: left;">
+        <h2 style="text-align: center;">Concept</h2>
         <div style="padding-left: 10%; padding-right: 10%;">
           <p>Fish feeding activity is an important indicator of fish heath status, but it can be difficult to determine if the feeding activity deviates from normal patterns. Toward this end, I have built a computerized device that can automatically feed and count fish. Fish feeding patterns, whether normal or abnormal, can be determined by time-series analyses and machine learning algorithms.</p>
-          <p><a href="#design">Learn more</a></p>
+          <hr>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div style="text-align: left;">
+                  <img src="feedingModel.png" style="display:block; margin: auto; width: 100%;" >
+                  <p>Fish feeding model: Fish feeding activity is quantified by counting the number of fish appeared within a feeding zone through time.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div style="text-align: left;">
+                  <img src="feedingModelVar.png" style="display:block; margin: auto; width: 100%;">
+                  <p>Feeding patterns deviates from normal. Slow feeding (red) indicates fish's appetite has decreased, whereas decreasing number of feeding fish (orange) implicates some fish did not come to eat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style="text-align: center;"><a href="#design">Learn more</a></p>
         </div>
       </div>
     </div>
