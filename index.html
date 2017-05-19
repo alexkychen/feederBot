@@ -101,7 +101,7 @@
       <div style="text-align: left;">
         <h2 style="text-align: center;">Concept</h2>
         <div style="padding-left: 10%; padding-right: 10%;">
-          <p>Fish feeding activity is an important indicator of fish heath status, but it can be difficult to determine if the feeding activity deviates from normal patterns. Toward this end, I have built a computerized device that can automatically feed and count fish. Fish feeding patterns, whether normal or abnormal, can be determined by time-series analyses and machine learning algorithms.</p>
+          <p>Fish feeding activity has a direct link to fish health, but it can be difficult to measure in large rearing systems, particularly in absence of fish keepers. Toward this end, I have developed a computerized device that can automatically release fish food and measure the number of fish during a feeding event. Through time-series analyses and machine-learning algorithms, it can determine whether fish feeding activities deviate from normal patterns, and subsequently send alerts to fish keepers when necessary.</p>
           <hr>
           <div class="container">
             <div class="row">
@@ -114,7 +114,7 @@
               <div class="col-md-6">
                 <div style="text-align: left;">
                   <img src="feedingModelVar.png" style="display:block; margin: auto; width: 100%;">
-                  <p>Feeding patterns deviates from the normal pattern (blue). Slow feeding (red) indicates fish's appetite has decreased, whereas decreasing number of feeding fish (orange) implicates some fish did not come to eat.</p>
+                  <p>Two feeding patterns (red and orange) deviate from the normal pattern (blue). Red line demonstrates slow feeding - fish have decreasing appetite. Orange line indicates that the number of feeding fish has decreased.</p>
                 </div>
               </div>
             </div>
@@ -140,35 +140,35 @@
           <img src="RPiBoard2.jpg" alt="...">
             <div class="carousel-caption">
               <h2>Electronic Components</h2>
-              <p style="font-size: 1.5em;">Fish FeederBot is built based on Raspberry Pi - an open source, inexpensive, and expandable single board computer, which connects to stepper motor and relay modules to control a feeder and water pumps.</p>
+              <p style="font-size: 1.5em;">Fish FeederBot is built based on Raspberry Pi - an open source, inexpensive, and expandable single board computer, which connects to stepper motor and relay modules for feeder and pump control.</p>
             </div>
         </div>
         <div class="item">
           <img src="PiCam.jpg" alt="...">
             <div class="carousel-caption">
               <h2>Vision Sensor</h2>
-              <p style="font-size: 1.5em">A Raspberry Pi Camera module is used to capture images, and each image is processed by computer vision programming to count the number of fish.</p>
+              <p style="font-size: 1.5em">Raspberry Pi Camera is used to capture images, and each image is then processed by computer vision programming to measure the number of fish.</p>
             </div>
         </div>
         <div class="item">
           <img src="FeederMod.jpg" alt="...">
             <div class="carousel-caption">
               <h2>Feeder Module</h2>
-              <p style="font-size: 1.5em">Feeding is controlled through a stepper motor such that the quantity of fish food can be precisely controlled and is adjustable.</p>
+              <p style="font-size: 1.5em">Feeder is driven by a stepper motor and the quantity of fish food can be precisely manipulated.</p>
             </div>
         </div>
         <div class="item">
           <img src="RelayMod.jpg" alt="...">
             <div class="carousel-caption">
               <h2>Relay Module</h2>
-              <p style="font-size: 1.5em">To ensure the feeding activity concentrates under the camera view, a relay module is used to temporarily turn off the power of filters or pumps that produce water flow. </p>
+              <p style="font-size: 1.5em">To ensure the camera captures images of fish feeding, a relay module is used to temporarily turn off the power of pumps that produce water flow. </p>
             </div>
         </div>
         <div class="item">
           <img src="3DHousing.jpg" alt="...">
             <div class="carousel-caption">
               <h2>3D Printed Housing</h2>
-              <p style="font-size: 1.5em">Electronic components are protected by 3D printed plastic cases. The 3D printed parts can be customized; different materials and colors are available.</p>
+              <p style="font-size: 1.5em">Electronic components are protected by 3D printed plastic cases, which can be customized to fit various rearing systems.</p>
             </div>
         </div>
       </div>
