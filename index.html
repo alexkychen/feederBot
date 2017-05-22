@@ -101,20 +101,20 @@
       <div style="text-align: left;">
         <h2 style="text-align: center;">Concept</h2>
         <div style="padding-left: 10%; padding-right: 10%;">
-          <p>Fish feeding activity has a direct link to fish health, but it can be difficult to measure in large rearing systems, particularly in absence of fish keepers. Toward this end, I have developed a computerized device that can automatically feed fish and measure their feeding activity by counting the number of fish appearing in the feeding area. Using time-series analyses and machine-learning algorithms, the machine can further determine if fish feeding activities have deviated from normal patterns, and subsequently send alerts to fish keepers when necessary.</p>
+          <p>Fish feeding activity has a direct link to fish health, but it can be difficult to measure in large rearing systems, particularly in absence of fish keepers. Toward this end, I have developed a computerized device that can automatically feed fish and measure their feeding activity by counting the number of fish appearing in a feeding area. Using time-series analyses and machine-learning algorithms, the machine can further determine if fish feeding activities have deviated from normal patterns, and subsequently send alerts to fish keepers when necessary.</p>
           <hr>
           <div class="container">
             <div class="row">
               <div class="col-md-6">
                 <div style="text-align: left;">
                   <img src="feedingModel.png" style="display:block; margin: auto; width: 100%;" >
-                  <p>Fish feeding model: Fish feeding activity is quantified by counting the number of fish appeared within a feeding zone through time.</p>
+                  <p>Fish feeding model: In a feeding event, the number of fish under the camera view (i.e., feeding zone) drastically increases right after fish food is released, and reaches to its peak, and then decreases after they consumed the fish food.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div style="text-align: left;">
                   <img src="feedingModelVar.png" style="display:block; margin: auto; width: 100%;">
-                  <p>Two feeding patterns (red and orange) deviate from the normal pattern (blue). Red line demonstrates slow feeding - fish have decreasing appetite. Orange line indicates that the number of feeding fish has decreased.</p>
+                  <p>Hypothetical normal (blue) and abnormal (red and orange) feeding patterns. The change from blue to red indicates that fish feeding activity has become slow - they spend more time to reach the peak; from blue to orange, the number of feeding fish decreases - some fish did not come to eat.</p>
                 </div>
               </div>
             </div>
